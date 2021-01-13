@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Cisco CX Internal</title>
+
+    <!-- Bootstrap -->
+    <link href="https://apparent-tcs-template.s3-ap-southeast-2.amazonaws.com/BCSWebinar/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="https://apparent-tcs-template.s3-ap-southeast-2.amazonaws.com/BCSWebinar/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://apparent-tcs-template.s3-ap-southeast-2.amazonaws.com/BCSWebinar/css/fonts.css" rel="stylesheet">
+    <!-- Custom Style CSS -->
+    <link href="https://apparent-tcs-template.s3-ap-southeast-2.amazonaws.com/BCSWebinar/css/styles.css" rel="stylesheet">
+    <!-- Custom responisve Style CSS -->
+    <link href="https://apparent-tcs-template.s3-ap-southeast-2.amazonaws.com/BCSWebinar/css/responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <style>
+.btn-skyBlue {
+ background-color: #029fe4 !important;
+ color: #fff !important;
+ padding-left: 25px;
+ padding-right: 25px;
+ -webkit-border-radius: 50px;
+ -moz-border-radius: 50px;
+ border-radius: 50px;
+ height: 40px;
+ font-family: ciscosansextralight;
+}
+.contact-us-btn {
+ text-align: center
+}
+.contact-us-btn .btn {
+ display: block;
+ max-width: 195px;
+ margin: 0 auto;
+}
+ .form-div .fuelux ::-webkit-input-placeholder { /* Edge /
+color: #b7c2cf;
+font-size: 16px;
+}
+.form-div .fuelux :-ms-input-placeholder { / Internet Explorer 10-11 */
+color: #b7c2cf;
+font-size: 16px;
+}
+.form-div .fuelux ::placeholder {
+color: #b7c2cf;
+font-size: 16px;
+}
+.form-div .fuelux input[type="text"], .form-div .fuelux input[type="email"] {
+ border: 0;
+ padding-bottom: 8px;
+ margin: 0;
+ border-bottom: 2px solid #c3cdd7;
+ padding-left: 20px;
+ padding-right: 20px;
+ font-size: 16px !important;
+ color: #b7c2cf;
+ font-family: ciscosansextralight;
+ outline: none;
+height: 48px;
+}
+  
+.form-div .fuelux select {
+ outline: none;
+ font-family: ciscosansextralight;
+ border: 0;
+ height: 48px;
+ padding-bottom: 8px;
+ margin: 0;
+ color: #b7c2cf;
+ border-bottom: 2px solid #c3cdd7;
+ padding-left: 15px;
+ padding-right: 15px;
+ font-size: 16px;
+ background-image: url(https://image.path.cisco.com/lib/fe3b15717564047b701271/m/1/5dda8fe9-b93c-46ba-a06b-1a244afeda43.png);
+ background-repeat: no-repeat;
+ background-position: right center;
+ -webkit-appearance: none;
+ -moz-appearance: none;
+ appearance: none;
+ background-color: #fff !important
+}
+  .form-div .fuelux select::-ms-expand{
+   display: none;
+   background-image: url(https://image.path.cisco.com/lib/fe3b15717564047b701271/m/1/5dda8fe9-b93c-46ba-a06b-1a244afeda43.png);
+   background-repeat: no-repeat;
+   background-position: right center;
+  } 
+.sc-formfield-input label {
+ display: block !important;
+ width: 100% !important;
+}
+.sc-formfield-input>label input[type="checkbox"] {
+ opacity: 0
+}
+.sc-formfield-input>label input[type="checkbox"]+span {
+ position: relative;
+ display: block;
+ padding-left: 25px;
+}
+.sc-formfield-input>label input[type="checkbox"]+span:after {
+ position: absolute;
+ left: 0;
+ top: 5px;
+ width: 18px;
+ height: 18px;
+ content: "";
+ display: block;
+ border: 1px solid #70859f;
+ z-index: 1;
+ -webkit-border-radius: 5px;
+ -moz-border-radius: 5px;
+ border-radius: 5px;
+}
+.sc-formfield-input>label input[type="checkbox"]:checked+span:before {
+ content: '';
+ display: block;
+ width: 6px;
+ height: 10px;
+ border: solid #70859f;
+ border-top-width: medium;
+ border-right-width: medium;
+ border-bottom-width: medium;
+ border-left-width: medium;
+ border-width: 0 2px 2px 0;
+ transform: rotate(45deg);
+ position: absolute;
+ left: 6px;
+ top: 8px;
+ z-index: 2;
+}
+
+@media only screen and (max-width:480px) {
+/* MOBILE GLOBAL STYLES - DO NOT CHANGE */
+body, .tb_properties{font-family: Arial !important; font-size: 16px !important; color: #808080 !important; line-height: 1 !important; padding: 0px !important; }.buttonstyles{font-family: Arial !important; font-size: 16px !important; color: #FFFFFF !important; padding: 0px !important; }h1{font-family: Arial !important; font-size: 22px !important; color: #202020 !important; line-height: 1 !important; }h2{font-family: Arial !important; font-size: 20px !important; color: #202020 !important; line-height: 1 !important; }h3{font-family: Arial !important; font-size: 18px !important; color: #202020 !important; line-height: 1 !important; }a:not(.buttonstyles){line-height: 1 !important; }.mobile-hidden{display: none !important; }.responsive-td {width: 100% !important; display: block !important; padding: 0 !important;}
+/* END OF MOBILE GLOBAL STYLES - DO NOT CHANGE */
+}
+</style>
+    <style>
+
+      h4 { margin-top: 20px;
+    margin-bottom: 20px; 
+    margin-left: 20px;}
+
+    h5 { margin-top: 20px !important;
+    margin-bottom: 10px !important;
+    margin-left: 20px; }
+
+    p {margin-bottom: 20px !important;
+    margin-left: 20px;}
+
+.form-div .form-control {
+ border: 0;
+ padding-bottom: 8px;
+ margin: 0;
+ border-bottom: 2px solid #c3cdd7;
+ padding-left: 20px;
+ padding-right: 20px;
+ font-size: 16px;
+ color: #b7c2cf;
+ font-family: ciscosansextralight;
+ outline: none;
+ height: auto;
+ box-shadow: none;
+ -webkit-border-radius: 0;
+ -moz-border-radius: 0;
+ border-radius: 0;
+ height: 40px;
+ 
+}
+.form-div .form-group {
+ margin-bottom: 25px;
+}
+.form-div textarea.form-control {
+ border: 1px solid #C3CDD7;
+ -webkit-border-radius: 5px;
+ -moz-border-radius: 5px;
+ border-radius: 5px;
+ height: 120px;
+}
+.form-div select.form-control {
+ font-family: ciscosansextralight;
+ background-image: url(https://image.path.cisco.com/lib/fe3b15717564047b701271/m/1/5dda8fe9-b93c-46ba-a06b-1a244afeda43.png);
+ background-repeat: no-repeat;
+ background-position: right center;
+ -webkit-appearance: none;
+ -moz-appearance: none;
+ appearance: none;
+ background-color: #fff;
+ height: 40px;
+}
+ .form-div select.form-control::-ms-expand{
+ display: none;
+ background-image: url(https://image.path.cisco.com/lib/fe3b15717564047b701271/m/1/5dda8fe9-b93c-46ba-a06b-1a244afeda43.png);
+ background-repeat: no-repeat;
+ background-position: right center;
+    
+ }  
+  
+ .form-div .form-control::-webkit-input-placeholder { /* Edge */
+ font-size: 16px;
+ color: #b7c2cf;
+}
+ .form-div .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ font-size: 16px;
+ color: #b7c2cf;
+}
+ .form-div .form-control::placeholder {
+ font-size: 16px;
+ color: #b7c2cf;
+}
+.opportunity-div {
+ font-weight: 400;
+ color: #70859f;
+ font-size: 12px;
+}
+.opportunity-div h5 {
+ text-align: center;
+ color: #70859f;
+ margin: 0;
+ padding: 0 0 5px 0;
+}
+.opportunity-div h5 span {
+ color: #f00;
+}
+.form-div .submit {
+ text-align: center
+}
+.form-div .submit .btn {
+ background-color: #009ddc;
+ border-color: #009ddc;
+ border-radius: 25px;
+ color: #ffffff;
+ font-family: "ciscosansextralight";
+ font-size: 14px;
+ font-weight: 300;
+ line-height: 16px;
+ padding: 10px 20px;
+}
+
+@media only screen and (max-width:480px) {
+.form-div {
+ padding: 30px 20px;
+}
+.form-div .form-group {
+ margin-bottom: 20px;
+}
+.form-div .form-control {
+ font-size: 14px;
+ padding-bottom: 6px;
+ padding-left: 10px;
+ padding-right: 10px;
+}
+ .form-div .form-control::-webkit-input-placeholder { /* Edge */
+ font-size: 14px;
+}
+ .form-div .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ font-size: 14px;
+}
+ .form-div .form-control::placeholder {
+ font-size: 14px;
+}
+ .form-div .form-control.lg-place::-webkit-input-placeholder { /* Edge */
+  font-size: 12px;
+ }
+  .form-div .form-control.lg-place:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  font-size: 12px;
+ }
+  .form-div .form-control.lg-place::placeholder {
+  font-size: 12px;
+ }
+ 
+ .form-div  h4{
+  
+  margin-left: 10px !important; 
+ }
+ .form-div .opportunity-div h5,
+ .form-div h5{
+  margin-left: 10px !important;
+ }
+ .form-div p{
+  margin-left: 10px;
+ }
+
+}
+@media only screen and (max-width:320px) {
+ .form-div {
+  padding: 25px 10px;
+ }
+ .form-div .form-group {
+  margin-bottom: 20px;
+ }
+ .form-div select.form-control {
+  height: 30px;
+ }
+ .form-div .form-control {
+  font-size: 13px;
+  padding-bottom: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 30px;
+ }
+  .form-div .form-control::-webkit-input-placeholder { /* Edge */
+  font-size: 13px;
+ }
+  .form-div .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  font-size: 13px;
+ }
+  .form-div .form-control::placeholder {
+  font-size: 13px;
+ }
+
+  .form-div .form-control.lg-place::-webkit-input-placeholder { /* Edge */
+  font-size: 10px;
+ }
+  .form-div .form-control.lg-place:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  font-size: 10px;
+ }
+  .form-div .form-control.lg-place::placeholder {
+  font-size: 10px;
+ }
+
+
+ .form-div  h4{
+  font-size: 18px !important;
+  margin-left: 5px !important;
+  margin-bottom: 10px;
+ }
+ .form-div .opportunity-div h5,
+ .form-div h5{
+  margin-left: 5px !important;
+ }
+ .form-div p{
+  margin-left: 5px;
+ }
+   
+}
+</style>
+    <link rel="icon" type="image/png" href="https://image.path.cisco.com/lib/fe3b15717564047b701271/m/1/2f996de4-7c49-4485-9dce-c320f42fb132.png">
+    <script type="text/javascript" src="//www.cisco.com/c/dam/cdc/t/ctm.js"></script>
+    </head>
+    <body>
+       <div class="body-div">
+         <header>
+           <div class="container logo"> <a href="#"><img src="https://apparent-tcs-template.s3-ap-southeast-2.amazonaws.com/BCSWebinar/images/logo.png" width="105" alt=""/></a> </div>
+         </header>
+         <article style="background-image: url(https://image.path.cisco.com/lib/fe3b15717564047b701271/m/1/f441bb16-c9f7-4e26-a5c3-1b4ca100fbf7.png)">
+           <div class="container">
+            <form  action="https://cloud.path.cisco.com/CXLeads/CX-Handler" >
+             <h1 style="line-height:50px;" class="title text-center" >Customer Experience Leads</h1>
+             <h2 class="text-center"> <span style="color: #70859F; font-family: 'ciscosansextralight'; font-size: 18px; font-weight:300; line-height: 30px;"> This form has been created for internal stakeholders to capture CX leads. <br>
+               <br>
+               Submitting leads to us will ensure that they are properly followed up by our sales team and advised on the services that are right for them. </span><br>
+               <br>
+               <br>
+             </h2>
+             <div class="cx-logo"> <img src="https://apparent-tcs-template.s3-ap-southeast-2.amazonaws.com/BCSWebinar/images/cx-logo.png" width="230" alt=""/> </div>
+             <div class="form-div">
+               
+               <div class="form-group">
+                <p style="font-size: 14px; font-family: ciscosansextralight; text-align:center;">* is a mandatory field<br><br></p>
+                 <input type="text" name="Submitter CEC User ID" placeholder="Submitter CEC User ID" class="form-control">
+               </div>
+               <div class="form-group">
+
+                 <select name="Submitter Role" required class="form-control">
+                   <option value="" selected="selected">Submitter Role*</option>
+                   <option value="CSE">CSE</option>
+                   <option value="CSS">CSS</option>
+                   <option value="CMS Delivery">CMS Delivery</option>
+                   <option value="CX Delivery">CX Delivery (e.g. HTOM, NCE, PM, BCS & AS roles)</option>
+                   <option value="SPM">SPM</option>
+                   <option value="Renewal Manager">Renewal Manager</option>
+                   <option value="Other">Other</option>
+                 </select>
+               </div>
+               <div class="form-group">
+                <h4 style="text-align: left; color: #70859f !important; line-height: 27px; font-family: ciscosansextralight; font-size: 20px; margin-left: 20px; margin-top: 10px;">Opportunity Details</h4>
+                 <div class="opportunity-div">
+                   <h5 style="text-align: left; color: #70859f !important; font-size:16px; line-height: 22px; font-family: ciscosansextralight; margin-left: 20px ;">Opportunity Description*</h5>
+                   <p style="font-size: 14px; font-family: ciscosansextralight;">(Provide details about the CX or product lead, including not only the products or services needed but also how the lead was uncovered and any details you have about the customer’s project, business need, sense of urgency, and level of understanding of the Cisco offering).</p>
+                 </div>
+                 <input type = "text" required name="Opportunity Description" placeholder="Please type your opportunity description" class="form-control">
+               </div>
+               <div class="form-group">
+                 
+                <select name="CX Category" class="form-control">
+                  <option value="" selected="selected">CX Category (Leave blank if no CX offer)</option>
+                  <option value="Support (Smart Net Total Care, Solution Support, Software Support)">Support (Smart Net Total Care, Solution Support, Software Support)</option>
+                  <option value="Perform and Transform (Business Critical Services, Advanced Services)">Perform and Transform (Business Critical Services, Advanced Services)</option>
+                  <option value="Operate (Cisco Managed Services)">Operate (Cisco Managed Services)</option>
+                  <option value="Success Tracks">Success Tracks</option>
+                  <option value="General">General</option>
+                </select>
+               </div>
+
+               <div class="form-group">
+                <h5 style="text-align: left; color: #70859f !important; font-size:16px; line-height: 22px; font-family: ciscosansextralight;">Architecture</h5>
+
+                   <p style="font-size: 14px; color: #70859f; font-family: ciscosansextralight;">Please share information about this opportunity, including the Architecture/Products of interest of the new lead and the Architecture/Products of interests that initiated the conversation with the customer</p>
+                 <select name="Architecture Product" class="form-control">
+                   <option value="" selected="selected">Related Architecture / Products</option>
+                   <option value="Collaboration">Collaboration</option>
+
+                   <option value="Data Centre">Data Centre</option>
+                   <option value="Data Centre - Cloud">Data Centre - Cloud</option>
+                   <option value="Enterprise Agreements">Enterprise Agreements</option>
+                   <option value="Enterprise Networking">Enterprise Networking</option>
+                   <option value="Internet Based Networking (IBN)">Internet Based Networking (IBN)</option>
+                   <option value="Internet of Things (IoT)">Internet of Things (IoT)</option>
+                   <option value="Multi Architecture">Multi Architecture</option>
+                   <option value="Security">Security</option>
+                 </select>
+               </div>
+               <div class="form-group">
+                 <select name="Upsell Cross sell" class="form-control">
+                   <option value="" selected="selected">Upsell / Cross Sell</option>
+                   <option value="Upsell">Upsell</option>
+                   <option value="Cross Sell">Cross Sell</option>
+                 </select>
+               </div>
+               <div class="form-group">
+                <h5 style="text-align: left; color: #70859f !important; font-size:16px; line-height: 22px; font-family: ciscosansextralight;">Account Team information</h5>
+
+                   <p style="font-size: 14px; color: #70859f; font-family: ciscosansextralight;">Please enter the name of the Account Manager, Client Director and/or Services Seller (if known). </p>
+                 <input type="text" name="AM Client Director Name" placeholder="AM or Client Director Name (if known)" class="form-control">
+               </div>
+               <div class="form-group">
+                 <input type="text" name="Service Seller Name" placeholder="Services Seller Name (if known)" class="form-control">
+               </div>
+               <div class="form-group">
+                 <h4 style="text-align: left; color: #70859f !important; line-height: 27px; font-family: ciscosansextralight; font-size: 20px;">Customer Information</h4>
+                 <input type="text" name="Customer Company Name" required data-validation-message="Please fill out this field." placeholder="Customer Company Name*" class="form-control">
+               </div>
+               <div class="form-group">
+                 <input type="text" name="First Name" placeholder="Customer First Name" class="form-control">
+               </div>
+               <div class="form-group">
+                 <input type="text" name="Last Name" required data-validation-message="Please fill out this field." placeholder="Customer Last Name*" class="form-control">
+               </div>
+               <div class="form-group">
+                 <input type="text"  name="Job Title" placeholder="Job Title" class="form-control">
+               </div>
+               <div class="form-group">
+                 <select name="Country" required data-validation-message="Please fill out this field." class="form-control">
+                    <option value="" selected="selected">Country*</option>
+  <option value="AFGHANISTAN">Afghanistan</option>
+  <option value="ALBANIA">Albania</option>
+  <option value="ALGERIA">Algeria</option>
+  <option value="AMERICAN SAMOA">American Samoa</option>
+  <option value="ANDORRA">Andorra</option>
+  <option value="ANGOLA">Angola</option>
+  <option value="ANGUILLA">Anguilla</option>
+  <option value="ANTARCTICA">Antarctica</option>
+  <option value="ANTIGUA AND BARBUDA">Antigua and Barbuda</option>
+  <option value="ARGENTINA">Argentina</option>
+  <option value="ARMENIA">Armenia</option>
+  <option value="ARUBA">Aruba</option>
+  <option value="AUSTRALIA">Australia</option>
+  <option value="AUSTRIA">Austria</option>
+  <option value="AZERBAIJAN">Azerbaijan</option>
+  <option value="BAHAMAS">Bahamas</option>
+  <option value="BAHRAIN">Bahrain</option>
+  <option value="BANGLADESH">Bangladesh</option>
+  <option value="BARBADOS">Barbados</option>
+  <option value="BELARUS">Belarus</option>
+  <option value="BELGIUM">Belgium</option>
+  <option value="BELIZE">Belize</option>
+  <option value="BENIN">Benin</option>
+  <option value="BERMUDA">Bermuda</option>
+  <option value="BHUTAN">Bhutan</option>
+  <option value="BOLIVIA">Bolivia</option>
+  <option value="BOSNIA AND HERZEGOVINA">Bosnia and Herzegovina</option>
+  <option value="BOTSWANA">Botswana</option>
+  <option value="BOUVET ISLAND">Bouvet Island</option>
+  <option value="BRAZIL">Brazil</option>
+  <option value="BRITISH INDIAN OCEAN TERRITORY">British Indian Ocean Territory</option>
+  <option value="BRUNEI DARUSSALAM">Brunei Darussalam</option>
+  <option value="BULGARIA">Bulgaria</option>
+  <option value="BURKINA FASO">Burkina Faso</option>
+  <option value="BURUNDI">Burundi</option>
+  <option value="CAMBODIA">Cambodia</option>
+  <option value="CAMEROON">Cameroon</option>
+  <option value="CANADA">Canada</option>
+  <option value="CAPE VERDE">Cape Verde</option>
+  <option value="CAYMAN ISLANDS">Cayman Islands/option&gt;
+  </option><option value="CENTRAL AFRICAN REPUBLIC">Central African Republic</option>
+  <option value="CHAD">Chad</option>
+  <option value="CHILE">Chile</option>
+  <option value="CHINA">China</option>
+  <option value="CHRISTMAS ISLAND">Christmas Island</option>
+  <option value="COCOS (KEELING) ISLANDS">Cocos (Keeling) Islands</option>
+  <option value="COLOMBIA">Colombia</option>
+  <option value="COMOROS">Comoros</option>
+  <option value="CONGO">Congo</option>
+  <option value="CONGO, THE DEMOCRATIC REPUBLIC OF THE">Congo, the Democratic Republic of the</option>
+  <option value="COOK ISLANDS">Cook Islands</option>
+  <option value="COSTA RICA">Costa Rica</option>
+  <option value="CÔTE D'IVOIRE">Côte D'ivoire</option>
+  <option value="CROATIA">Croatia</option>
+  <option value="CUBA">Cuba</option>
+  <option value="CYPRUS">Cyprus</option>
+  <option value="CZECH REPUBLIC">Czech Republic</option>
+  <option value="DENMARK">Denmark</option>
+  <option value="DJIBOUTI">Djibouti</option>
+  <option value="DOMINICA">Dominica</option>
+  <option value="DOMINICAN REPUBLIC">DOMINICAN REPUBLIC</option>
+  <option value="ECUADOR">Ecuador</option>
+  <option value="EGYPT">Egypt</option>
+  <option value="EL SALVADOR">El Salvador</option>
+  <option value="EQUATORIAL GUINEA">Equatorial Guinea</option>
+  <option value="ERITREA">Eritrea</option>
+  <option value="ESTONIA">Estonia</option>
+  <option value="ETHIOPIA">Ethiopia</option>
+  <option value="FALKLAND ISLANDS (MALVINAS)">Falkland Islands (Malvinas)</option>
+  <option value="FAROE ISLANDS">Faroe Islands</option>
+  <option value="FIJI">Fiji</option>
+  <option value="FINLAND">Finland</option>
+  <option value="FRANCE">France</option>
+  <option value="FRENCH GUIANA">French Guiana</option>
+  <option value="FRENCH POLYNESIA">French Polynesia</option>
+  <option value="FRENCH SOUTHERN TERRITORIES">French Southern Territories</option>
+  <option value="GABON">Gabon</option>
+  <option value="GAMBIA">Gambia</option>
+  <option value="GEORGIA">Georgia</option>
+  <option value="GERMANY">Germany</option>
+  <option value="GHANA">Ghana</option>
+  <option value="GIBRALTAR">Gibraltar</option>
+  <option value="GREECE">Greece</option>
+  <option value="GREENLAND">Greenland</option>
+  <option value="GRENADA">Grenada</option>
+  <option value="GUADELOUPE">Guadeloupe</option>
+  <option value="GUAM">Guam</option>
+  <option value="GUATEMALA">Guatemala</option>
+  <option value="GUINEA">Guinea</option>
+  <option value="GUINEA-BISSAU">Guinea-bissau</option>
+  <option value="GUYANA">Guyana</option>
+  <option value="HAITI">Haiti</option>
+  <option value="HEARD ISLAND AND MCDONALD ISLANDS">Heard Island and Mcdonald Islands</option>
+  <option value="HOLY SEE (VATICAN CITY STATE)">Holy See (Vatican City State)</option>
+  <option value="HONDURAS">Honduras</option>
+  <option value="HONG KONG">Hong Kong</option>
+  <option value="HUNGARY">Hungary</option>
+  <option value="ICELAND">Iceland</option>
+  <option value="INDIA">India</option>
+  <option value="INDONESIA">Indonesia</option>
+  <option value="IRAN, ISLAMIC REPUBLIC OF">Iran, Islamic Republic of</option>
+  <option value="IRAQ">Iraq</option>
+  <option value="IRELAND">Ireland</option>
+  <option value="ISRAEL">Israel</option>
+  <option value="ITALY">Italy</option>
+  <option value="JAMAICA">Jamaica</option>
+  <option value="JAPAN">Japan</option>
+  <option value="JORDAN">Jordan</option>
+  <option value="KAZAKHSTAN">Kazakhstan</option>
+  <option value="KENYA">Kenya</option>
+  <option value="KIRIBATI">Kiribati</option>
+  <option value="KOREA, DEMOCRATIC PEOPLE'S REPUBLIC OF">Korea, Democratic People's Republic of</option>
+  <option value="KOREA, REPUBLIC OF">Korea, Republic of</option>
+  <option value="KUWAIT">Kuwait</option>
+  <option value="KYRGYZSTAN">Kyrgyzstan</option>
+  <option value="LAO PEOPLE'S DEMOCRATIC REPUBLIC">Lao People's Democratic Republic</option>
+  <option value="LATVIA">Latvia</option>
+  <option value="LEBANON">Lebanon</option>
+  <option value="LESOTHO">Lesotho</option>
+  <option value="LIBERIA">Liberia</option>
+  <option value="LIBYAN ARAB JAMAHIRIYA">Libyan Arab Jamahiriya</option>
+  <option value="LIECHTENSTEIN">Liechtenstein</option>
+  <option value="LITHUANIA">Lithuania</option>
+  <option value="LUXEMBOURG">Luxembourg</option>
+  <option value="MACAO">Macao</option>
+  <option value="MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF">Macedonia, the Former Yugoslav Republic of</option>
+  <option value="MADAGASCAR">Madagascar</option>
+  <option value="MALAWI">Malawi</option>
+  <option value="MALAYSIA">Malaysia</option>
+  <option value="MALDIVES">Maldives</option>
+  <option value="MALI">Mali</option>
+  <option value="MALTA">Malta</option>
+  <option value="MARSHALL ISLANDS">Marshall Islands</option>
+  <option value="MARTINIQUE">Martinique</option>
+  <option value="MAURITANIA">Mauritania</option>
+  <option value="MAURITIUS">Mauritius</option>
+  <option value="MAYOTTE">Mayotte</option>
+  <option value="MEXICO">Mexico</option>
+  <option value="MICRONESIA, FEDERATED STATES OF">Micronesia, Federated States of</option>
+  <option value="MOLDOVA, REPUBLIC OF">Moldova, Republic of</option>
+  <option value="MONACO">Monaco</option>
+  <option value="MONGOLIA">Mongolia</option>
+  <option value="MONTSERRAT">Montserrat</option>
+  <option value="MOROCCO">Morocco</option>
+  <option value="MOZAMBIQUE">Mozambique</option>
+  <option value="MYANMAR">Myanmar</option>
+  <option value="NAMIBIA">Namibia</option>
+  <option value="NAURU">Nauru</option>
+  <option value="NEPAL">Nepal</option>
+  <option value="NETHERLANDS">Netherlands</option>
+  <option value="NETHERLANDS ANTILLES">Netherlands Antilles</option>
+  <option value="NEW CALEDONIA">New Caledonia</option>
+  <option value="NEW ZEALAND">New Zealand</option>
+  <option value="NICARAGUA">Nicaragua</option>
+  <option value="NIGER">Niger</option>
+  <option value="NIGERIA">Nigeria</option>
+  <option value="NIUE">Niue</option>
+  <option value="NORFOLK ISLAND">Norfolk Island</option>
+  <option value="NORTHERN MARIANA ISLANDS">Northern Mariana Islands</option>
+  <option value="NORWAY">Norway</option>
+  <option value="OMAN">Oman</option>
+  <option value="PAKISTAN">Pakistan</option>
+  <option value="PALAU">Palau</option>
+  <option value="PALESTINE, STATE OF">Palestine, State of</option>
+  <option value="PANAMA">Panama</option>
+  <option value="PAPUA NEW GUINEA">Papua New Guinea</option>
+  <option value="PARAGUAY">Paraguay</option>
+  <option value="PERU">Peru</option>
+  <option value="PHILIPPINES">Philippines</option>
+  <option value="PITCAIRN">Pitcairn</option>
+  <option value="POLAND">Poland</option>
+  <option value="PORTUGAL">Portugal</option>
+  <option value="PUERTO RICO">Puerto Rico</option>
+  <option value="QATAR">Qatar</option>
+  <option value="RÉUNION">Réunion</option>
+  <option value="RUSSIAN FEDERATIONROMANIA">Romania</option>
+  <option value="RUSSIAN FEDERATION">Russian Federation</option>
+  <option value="RWANDA">Rwanda</option>
+  <option value="SAINT HELENA">Saint Helena</option>
+  <option value="SAINT KITTS AND NEVIS">Saint Kitts and Nevis</option>
+  <option value="SAINT LUCIA">Saint Lucia</option>
+  <option value="SAINT PIERRE AND MIQUELON">Saint Pierre and Miquelon</option>
+  <option value="SAINT VINCENT AND THE GRENADINES">Saint Vincent and the Grenadines</option>
+  <option value="SAMOA">Samoa</option>
+  <option value="SAN MARINO">San Marino</option>
+  <option value="SAO TOME AND PRINCIPE">Sao Tome and Principe</option>
+  <option value="SAUDI ARABIA">Saudi Arabia</option>
+  <option value="SENEGAL">Senegal</option>
+  <option value="SERBIA AND MONTENEGRO">Serbia and Montenegro</option>
+  <option value="SEYCHELLES">Seychelles</option>
+  <option value="SIERRA LEONE">Sierra Leone</option>
+  <option value="SINGAPORE">Singapore</option>
+  <option value="SLOVAKIA">Slovakia</option>
+  <option value="SLOVENIA">Slovenia</option>
+  <option value="SOLOMON ISLANDS">Solomon Islands</option>
+  <option value="SOMALIA">Somalia</option>
+  <option value="SOUTH AFRICA">South Africa</option>
+  <option value="SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS">South Georgia and the South Sandwich Islands</option>
+  <option value="SOUTH SUDAN">South Sudan</option>
+  <option value="SPAIN">Spain</option>
+  <option value="SRI LANKA">Sri Lanka</option>
+  <option value="SUDAN">Sudan</option>
+  <option value="SURINAME">Suriname</option>
+  <option value="SVALBARD AND JAN MAYEN">Svalbard and Jan Mayen</option>
+  <option value="SWAZILAND">Swaziland</option>
+  <option value="SWEDEN">Sweden</option>
+  <option value="SWITZERLAND">Switzerland</option>
+  <option value="SYRIAN ARAB REPUBLIC">Syrian Arab Republic</option>
+  <option value="TAAF">Taaf</option>
+  <option value="TAIWAN">Taiwan</option>
+  <option value="TAJIKISTAN">Tajikistan</option>
+  <option value="TANZANIA, UNITED REPUBLIC OF">Tanzania, United Republic of</option>
+  <option value="THAILAND">Thailand</option>
+  <option value="TIMOR-LESTE">Timor-leste</option>
+  <option value="TOGO">Togo</option>
+  <option value="TOKELAU">Tokelau</option>
+  <option value="TONGA">Tonga</option>
+  <option value="TRINIDAD AND TOBAGO">Trinidad and Tobago</option>
+  <option value="TUNISIA">Tunisia</option>
+  <option value="TURKEY">Turkey</option>
+  <option value="TURKMENISTAN">Turkmenistan</option>
+  <option value="TURKS AND CAICOS ISLANDS">Turks and Caicos Islands</option>
+  <option value="TUVALU">Tuvalu</option>
+  <option value="UGANDA">Uganda</option>
+  <option value="UKRAINE">Ukraine</option>
+  <option value="UNITED ARAB EMIRATES">United Arab Emirates</option>
+  <option value="UNITED KINGDOM">United Kingdom</option>
+  <option value="UNITED STATES">United States</option>
+  <option value="UNITED STATES MINOR OUTLYING ISLANDS">United States Minor Outlying Islands</option>
+  <option value="URUGUAY">Uruguay</option>
+  <option value="UZBEKISTAN">Uzbekistan</option>
+  <option value="VANUATU">Vanuatu</option>
+  <option value="VENEZUELA">Venezuela</option>
+  <option value="VIET NAM">Viet Nam/option&gt;
+  </option><option value="VIRGIN ISLANDS, BRITISH">Virgin Islands, British</option>
+  <option value="VIRGIN ISLANDS, U.S.">Virgin Islands, U.S.</option>
+  <option value="WALLIS AND FUTUNA">Wallis and Futuna</option>
+  <option value="WESTERN SAHARA">Western Sahara</option>
+  <option value="YEMEN">Yemen</option>
+  <option value="ZAMBIA">Zambia</option>
+  <option value="ZIMBABWE">Zimbabwe</option>
+  <option value="ALAND ISLANDS">Aland Islands</option>
+  <option value="BONAIRE, SINT EUSTATIUS AND SABA">Bonaire, Sint Eustatius and Saba</option>
+  <option value="CURAÇAO">CURAÇAO</option>
+  <option value="KOSOVO">Kosovo</option>
+  <option value="MONTENEGRO">Montenegro</option>
+  <option value="SAINT BARTHÉLEMY">Saint Barthélemy</option>
+  <option value="SAINT MARTIN">Saint Martin</option>
+  <option value="SERBIA">Serbia</option>
+  <option value="SINT MAARTEN">Sint Maarten</option>
+  <option value="GUERNSEY">Guernsey</option>
+  <option value="ISLE OF MAN">Isle of Man</option>
+  <option value="JERSEY">Jersey</option>
+                 </select>
+               </div>
+               <div class="form-group">
+                 <input type="text" name="State Province" placeholder="State or Province" class="form-control">
+               </div>
+               <div class="form-group">
+                 <input type="text" name="City" placeholder="City" class="form-control">
+               </div>
+               <div class="form-group">
+                 <input type="text" name="Line 1 Address" placeholder="Address" class="form-control">
+               </div>
+               <div class="form-group">
+                 <input type="email" name="Customer Email" required data-validation-message="Please enter an email address." placeholder="Customer Contact Email*" class="form-control">
+               </div>
+               <div class="form-group">
+                 <input type="text" name="Phone Number" placeholder="Customer Contact Phone*" required data-validation-message="Please fill out this field." class="form-control">
+               </div>
+               <div class="form-group">
+                 <input type="text" name="Budget" placeholder="Product and Services Budget (high-level $ estimate)" class="form-control lg-place">
+               </div>
+               <div class="form-group">
+                 <input type="text" name="Customer Decision Maker" placeholder="Customer Decision Maker Contact (Name & Role)" class="form-control lg-place">
+               </div>
+               <div class="form-group">
+                 <select name="Timeframe" class="form-control">
+                   <option value="" selected="selected">Time Frame to Purchase</option>
+                   <option value="Now - 3 Months">Now - 3 Months</option>
+                   <option value="4 - 6 Months">4 - 6 Months</option>
+                   <option value="7 - 12 Months">7 - 12 Months</option>
+                   <option value="Over 12 Months">Over 12 Months</option>
+                   <option value="No Plans To Purchase">No Plans To Purchase</option>
+                   <option value="Unknown">Unknown</option>
+                 </select>
+               </div>
+               <div class="form-group submit">
+                 <button  type="submit" class="btn btn-default">Submit</button>
+                 </div>
+             </div>
+             </form>
+           </div>
+         </article>
+         <footer>
+           <div class="container-fluid">
+             <div class="row">
+               <div class="col-lg-3 left-logo"> <a href="https://www.cisco.com/c/en/us/services/overview.html" target="_blank"><img src="https://apparent-tcs-template.s3-ap-southeast-2.amazonaws.com/BCSWebinar/images/f-logo.png" width="200" alt=""/></a> </div>
+               <div class="col-lg-9">
+                 <div class="row">
+                   <div class="col-md-6 ">
+                     <div class="link-f"> <a href="https://www.cisco.com/c/en/us/about/legal/terms-conditions.html" target="_blank">Terms & Conditions</a> | <a href="https://www.cisco.com/c/en/us/about/legal/privacy-full.html" target="_blank">Privacy Statement</a> | <a href="https://www.cisco.com/c/en/us/about/legal/privacy-full.html#cookies" target="_blank">Cookie Policy</a> | <a href="https://www.cisco.com/c/en/us/about/legal/trademarks.html" target="_blank">Trademarks</a> </div>
+                   </div>
+                   <div class="col-md-6">
+                     <div class="row">
+                       <div class="col-sm-7">
+                         <div class="contact-us-btn"> <a href="https://cloud.path.cisco.com/contactuscx" target="_blank" class="btn btn-skyBlue">Contact us</a> </div>
+                       </div>
+                       <div class="col-sm-5">
+                         <div class="social"> <a href="https://www.linkedin.com/company/cisco/" target="_blank"><img src="https://apparent-tcs-template.s3-ap-southeast-2.amazonaws.com/BCSWebinar/images/in.jpg" width="25" alt=""/></a> <a href="https://www.facebook.com/ciscocustomerexperience/" target="_blank"><img src="https://apparent-tcs-template.s3-ap-southeast-2.amazonaws.com/BCSWebinar/images/fb.jpg" width="25" alt=""/></a> <a href="https://twitter.com/ciscocx" target="_blank"><img src="https://apparent-tcs-template.s3-ap-southeast-2.amazonaws.com/BCSWebinar/images/tw.jpg" width="25" alt=""/></a> </div>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </footer>
+       </div>
+</body>
+</html>
+
